@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Viewer</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        #title{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #bb359a;
+            text-align: center;
+            font-size: 50px;
+            margin: 20px;
+        }
+
+        body {
+            background-color: rgba(104, 155, 212, 0.157);
+            margin: 0 0;
+        }
+
+        h2{
+            text-align: center;
+            color: #bb359a;
+            font-size: 25px;
+        }
+
+        .box {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+        .box-title {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+            margin-left: 0 0;
+            background-color: rgba(104, 155, 212, 0.157);
+        }
+
+        .dividores{
+            /* border-width: 3px;
+            border-style: groove;
+            padding: 10px 10px; */
+            margin-right: 20px;
+        }
+
+        #glassGlasses{
+            width: 400px;
+            height: 600px;
+            margin: 0px;
+            background-color: #ff6961;
+            border-radius: 50px;
+        }
+        #blackGlasses{
+            width: 400px;
+            height: 600px;
+            margin: 0px;
+            background-color: #77dd77;
+            border-radius: 50px;
+        }
+        #neonGlasses{
+            width: 400px;
+            height: 600px;
+            margin: 0px;
+            background-color: #fdfd96;
+            border-radius: 50px;
+        }
+        #loveGlasses{
+            width: 400px;
+            height: 600px;
+            margin: 0px;
+            background-color: #84b6f4;
+            border-radius: 50px;
+        }
+        #woodGlasses{
+            width: 400px;
+            height: 600px;
+            margin: 0px;
+            background-color: #fdcae1;
+            border-radius: 50px;
+        }
+        #sunGlasses{
+            width: 400px;
+            height: 600px;
+            margin: 0px;
+            background-color: #ffda9e;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-title">
+        <div></div>
+        <h1 id="title">Bienvenido a vitrinea</h1>
+        <img src="vitrinea.png" alt="" srcset="" height="100" width="100">
+    </div>
+
+    <div class="box">
+        <div class="dividores">
+            <h2>Gafas de cristal</h2>
+            <model-viewer id="glassGlasses" src="./glassGlasses/scene.gltf" camera-controls auto-rotate ar ios-src="./glassGlasses/Glasses.usdz"></model-viewer>
+        </div>
+        <div class="dividores">
+            <h2>Gafas negras</h2>
+            <model-viewer id="blackGlasses" src="./blackGlasses/scene.gltf" camera-controls auto-rotate ar ios-src="./blackGlasses/Glasses.usdz"></model-viewer>
+        </div>
+        <div class="dividores">
+            <h2>Gafas de neon</h2>
+            <model-viewer id="neonGlasses" src="./neonGlasses/scene.gltf" camera-controls auto-rotate ar ios-src="./neonGlasses/Neon_Party_Glasses.usdz"></model-viewer>
+        </div>
+        <div class="dividores">
+            <h2>Gafas de corazón</h2>
+            <model-viewer id="loveGlasses" src="./loveGlasses/scene.gltf" camera-controls auto-rotate ar ios-src="./loveGlasses/Heart-shaped_glasses.usdz"></model-viewer>
+        </div>
+        <div class="dividores">
+            <h2>Gafas madera</h2>
+            <model-viewer id="woodGlasses" src="./woodGlasses/scene.gltf" camera-controls auto-rotate ar ios-src=".Glasses.usdz"></model-viewer>
+        </div>
+        <div class="dividores">
+            <h2>Gafas de sol</h2>
+            <model-viewer id="sunGlasses" src="./sunGlasses/scene.gltf" camera-controls auto-rotate ar ios-src=".Sun_Glasses.usdz"></model-viewer>
+        </div>
+      </div>
+</body>
+</html>
